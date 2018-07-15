@@ -11,6 +11,47 @@
  * It is generally better to create a new file per style scope.
  *
  *= require cartify/application
-*= require_tree .
+ *= require_tree .
  *= require_self
  */
+ 
+ 
+ .checkout {
+    color: white;
+    background-color: brown;
+    border-color: white;
+    border-radius: 4px;
+    width: 95px;
+    height: 30px;
+}
+
+.checkout:hover {
+    background-color: #3c9234;
+    font-weight: bold;
+    border-width: 2px;
+}
+
+.checkout:active {
+    background-color: #02361a;
+}
+
+.navbar {
+    background-color: brown;
+        .headline {
+            text-align: center;
+            color: white;
+        }
+        a {
+            border: solid;
+            color: yellow;
+        }
+}
+
+h5.welcome {
+    color: brown; 
+    text-align: center;
+}
+
+table#starters {
+    color: brown;
+}
