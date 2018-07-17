@@ -8,12 +8,14 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     %link{:href => "https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css", :rel => "stylesheet"}/
   %body  
-    .navbar
-      .logo
+    %ul.navbar
+      %li.logo
         = link_to 'Logo', root_path
-      %h1.headline Cibus
-      = link_to 'Login', root_path
-      = link_to 'Signup', root_path
+      %li.headline Cibus
+      %li.login
+        = link_to 'Login', root_path
+      %li.signup  
+        = link_to 'Signup', root_path
     
     #notifications
       = alert 
